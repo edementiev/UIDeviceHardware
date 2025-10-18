@@ -11,7 +11,7 @@ public class BBB {
     //
     // MARK: Private
     //
-    static func info() -> [String: Any]? {
+    public static func info() -> [String: Any]? {
         guard let info = Bundle.main.infoDictionary else {
             print("BundleData: Could not get an access to data from Info.plist")
             return nil
