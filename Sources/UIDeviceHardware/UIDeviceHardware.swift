@@ -8,7 +8,7 @@
 import UIKit
 
 public class UIDeviceHardware {
-    static let modelId: String = {
+    public static let modelId: String = {
         var systemInfo = utsname()
         
         uname(&systemInfo)
@@ -22,7 +22,7 @@ public class UIDeviceHardware {
         return identifier
     }()
     
-    static let modelName: String = {
+    public static let modelName: String = {
         func mapToDevice(identifier: String) -> String {
             #if os(iOS)
                 switch identifier {
