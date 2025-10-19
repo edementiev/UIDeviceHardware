@@ -9,10 +9,10 @@ import UIKit
 import DeviceKit
 
 public struct DynamicIslandSize: Sendable {
-    let topY: CGFloat
-    let width: CGFloat
-    let height: CGFloat
-    let topCenter: CGFloat
+    public let topY: CGFloat
+    public let width: CGFloat
+    public let height: CGFloat
+    public let topCenter: CGFloat
     
     init(topY: CGFloat, width: CGFloat, height: CGFloat) {
         self.topY = topY
