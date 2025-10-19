@@ -80,7 +80,7 @@ public class UIDeviceHardware {
                     .iPhone17, .simulator(.iPhone17), .iPhone17Pro, .simulator(.iPhone17Pro), .iPhone17ProMax, .simulator(.iPhone17ProMax):
                 return DynamicIslandSize(topY: 14.0, width: 125.5, height: 36.8)
 
-            case .iPhoneAir:
+            case .iPhoneAir, .simulator(.iPhoneAir):
                 return DynamicIslandSize(topY: 20.0, width: 125.5, height: 36.8)
 
             default:
