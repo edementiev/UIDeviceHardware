@@ -185,8 +185,8 @@ public enum DeviceModelType: Sendable {
 }
 
 public class UIDeviceHardware {
-    /*
-    public static let modelId: String = {
+
+    public static let identifier: String = {
         var systemInfo = utsname()
         
         uname(&systemInfo)
@@ -199,6 +199,8 @@ public class UIDeviceHardware {
         
         return identifier
     }()
+
+    /*
     
     public static let model: DeviceModelType = {
         return UIDeviceHardware.mapToDevice(identifier: UIDeviceHardware.modelId)
